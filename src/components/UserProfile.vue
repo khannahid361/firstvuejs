@@ -18,14 +18,7 @@ export default {
     },
   },
   watch: {
-    $route: {
-      handler: function (value) {
-        this.userId = value.params.user_Id;
-        console.log(value.params.user_Id);
-      },
-      deep: true,
-      immediate: true,
-    },
+    $route: "updateId",
   },
 };
 </script>
