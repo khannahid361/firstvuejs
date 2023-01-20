@@ -1,0 +1,71 @@
+
+  <!-- <div>{{ name }}</div>
+  <p v-bind:style="{
+    'font-size':fsize,
+    }">lol</p>
+  <h2 :style="styleObj">Khaba</h2>
+  <h2 v-if="zero==0">Number is 0</h2>
+  <h2 v-if="one==1">Number is 1</h2>
+  <div>I have {{ dollar }} </div>
+  <button @click="amount(50)">+1</button>
+  <button @click="amount(-50)">-1</button>
+  <div class="canvas" @mousemove="printOffset">
+  {{ log.x }}, {{ log.y }}
+  </div>
+  <input type="text" name="" id="" @keyup="myName">
+  <br>
+  <br>
+  <h2>My Age: {{ age }}</h2>
+  <input type="text" name="" id="" v-model="age">
+  <a href="https://youtube.com/" >Facebook</a>
+  <button @click.alt="ok">Click</button> -->
+
+  
+  <div>
+    <ol>
+      <li v-for='fruit in fruits' :key="fruit">{{ fruit.names }}</li>
+    </ol>
+  </div>
+
+  <!-- data() {
+    return {
+      name:'Kamrul',
+      fsize :'50px',
+      styleObj:{
+        fontSize:'200px',
+        color: 'red'
+      },
+      zero: 0,
+      one :2,
+      dollar : 20,
+      log:{
+        x:0,
+        y:0
+      },
+      age:90,
+      fruits:
+      [
+        {names:'Banana',color:'yellow'},
+        {names:'Apple',color:'green'},
+        {names:'strawberry',color:'red'}
+      ]
+    }
+  },
+  methods: {
+    amount(taka)
+    {
+      this.dollar+=taka;
+    },
+    printOffset(e){
+      this.log.x = e.offsetX      
+      this.log.y = e.offsetY      
+    },
+    myName(e)
+    {
+      this.name = e.target.value
+    },
+    ok()
+    {
+      alert('Clicked')
+    },
+  }, -->
